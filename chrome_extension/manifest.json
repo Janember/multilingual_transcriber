@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "MeetScribe – Multilingual Transcriber",
+  "version": "1.0.0",
+  "description": "Captures Google Meet audio and sends it for multilingual transcription.",
+  "permissions": [
+    "tabCapture",
+    "offscreen",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

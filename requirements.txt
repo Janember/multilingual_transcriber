@@ -1,0 +1,22 @@
+# Core
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+websockets>=12.0
+python-multipart>=0.0.9
+
+# Transcription
+openai-whisper>=20240930
+torch>=2.2.0            # CPU build is fine for testing; add torchvision/torchaudio if needed
+
+# Summarization
+transformers>=4.41.0
+sentencepiece>=0.2.0    # needed for mT5 tokenizer
+accelerate>=0.30.0
+
+# Frontend
+streamlit>=1.35.0
+requests>=2.31.0
+
+# Utilities
+pydantic>=2.7.0
+python-dotenv>=1.0.1
