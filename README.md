@@ -151,5 +151,4 @@ SUMMARIZER_MODEL=facebook/bart-large-cnn
 | "tabCapture failed" | Extension must be active on a Meet tab, not a background tab |
 | Whisper very slow | Use a smaller model (`tiny`/`base`) or enable GPU |
 | Cebuano detected as Tagalog | This is expected; set `CEBUANO_REMAP=True` in `transcriber.py` |
-# multilingual_transcriber
 
